@@ -32,22 +32,24 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .page2{
-  background: #69C3FF;
+  background: linear-gradient(#34AEFF, #69C3FF);
 }
 .page2-img{
-  width:100%;
+  width:85%;
+  display: block;
+  margin: auto;
 }
 .rollinstructions{
-  width: 1.96rem;
+  width: 1.76rem;
   position: absolute;
-  top: 10.55rem;
+  top: 8.97rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .click-roll{
-  width: 2.59rem;
+  width: 1.9rem;
   position: absolute;
-  top: 11.5rem;
+  top: 9.87rem;
   left: 50%;
   transform: translateX(-50%);
 }

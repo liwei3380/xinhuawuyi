@@ -14,10 +14,10 @@ var init = function () {
         signatureurl:config.hosturl+'/getsignature',
         appId:'wx3d5547d122fc289c',
         jsApiList:['onMenuShareTimeline','onMenuShareAppMessage'],
-        title:'激情假日',
-        desc:'新华祝你出行',
+        title:'激情假日新华助你出行',
+        desc:'保本明星姚秋携红利回报助您出行',
         link:'http://www.linki2u.com/wxjstxt/xinhuawuyi/dist/dao.html',
-        imgurl:'',
+        imgurl:'http://www.linki2u.com/wxjstxt/xinhuawuyi/dist/share.png',
         callback:cb
       });
 }

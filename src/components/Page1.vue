@@ -26,10 +26,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .page1{
-  
+  background: #34AEFF;
 }
 .page1-img{
-  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
 }
 .swipeup{
   position: absolute;

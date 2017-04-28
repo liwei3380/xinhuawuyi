@@ -1,5 +1,5 @@
 <template>
-  <div class="page3 shuping">
+  <div class="page3 shuping" @click="toworldmap">
     <img src="../assets/mapbg.png" class="mapbg">
     <img src="../assets/landscap-prompt.png" class="ls-pt">
     <div class="shade"></div>
@@ -22,6 +22,9 @@ export default {
           this.$router.push('/worldmap')
           window.removeEventListener("onorientationchange" in window ? "orientationchange" : "resize", this.hengshuping, false);
         }
+    },
+    toworldmap(){
+      this.$router.push('/worldmap')
     }
   }
 }
