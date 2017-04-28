@@ -1,12 +1,13 @@
 <template>
   <div class="worldmap">
     <img src="../assets/mapbg.png" class="wmbg">
-    <img src="../assets/eiffel.png" @click="showdazhou(0)" class="eiffel">
-    <img src="../assets/greatwall.png" @click="showdazhou(1)" class="greatewall">
-    <img src="../assets/jesus.png" @click="showdazhou(2)" class="jesus">
-    <img src="../assets/pyramid.png" @click="showdazhou(3)" class="pyramid">
-    <img src="../assets/statue.png" @click="showdazhou(4)" class="statue">
-    <img src="../assets/sydney.png" @click="showdazhou(5)" class="sydney">
+    <img src="../assets/eiffel.png" @click="showdazhou(0)" class="eiffel ani-tip">
+    <img src="../assets/greatwall.png" @click="showdazhou(1)" class="greatewall ani-tip">
+    <img src="../assets/jesus.png" @click="showdazhou(2)" class="jesus ani-tip">
+    <img src="../assets/pyramid.png" @click="showdazhou(3)" class="pyramid ani-tip">
+    <img src="../assets/statue.png" @click="showdazhou(4)" class="statue ani-tip">
+    <img src="../assets/sydney.png" @click="showdazhou(5)" class="sydney ani-tip">
+    <div class="prompt">左右滑动查看</div>
     <dazhou v-show="dazhoushow" @click="closedazhou" class="dazhou" :rollstat="rollstat" :msgg="msgg" :dazhouid="dazhouid"></dazhou>
   </div>
 </template>
@@ -143,5 +144,28 @@ export default {
   right: 0;
   bottom: 0;
 }
-
+.prompt{
+  position: fixed;
+  bottom:0.8rem;
+  left: 3rem;
+  color: #F5B236;
+  font-size: 16px;
+}
+.ani-tip{
+  
+  animation:zoomInNum3 2s 2s infinite;
+}
+@keyframes zoomInNum3 {
+  0% {
+    
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    
+    transform: scale(1);
+  }
+}
 </style>

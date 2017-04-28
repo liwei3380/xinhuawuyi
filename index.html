@@ -6,8 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title></title>
   </head>
+  <style type="text/css">
+  .moc{
+    width:0.67rem;
+    height:0.67rem;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    z-index: 10;
+  }
+  .open{
+    background: url("./static/img/openm.png");
+    background-size: cover;
+  }
+  .close{
+    background: url("./static/img/closem.png");
+    background-size: cover;
+  }
+  </style>
   <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <body>
+    <div id="mus" class="moc open"></div>
+    <audio id="audio" loop>   
+      <source src="http://123.56.26.118:8080/Linki2uCenterTest/music/1.mp3" type="audio/mpeg">
+    </audio>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
@@ -20,4 +42,32 @@
       document.body.style.height = deviceHeight+'px'
       sessionStorage.setItem('bodyheight', deviceHeight+'px')
   </script>
+    <script src="./static/js/zepto.js"></script>
+    <script type="text/javascript">
+      audioAutoPlay('audio');
+        function audioAutoPlay(id){
+            var audio = document.getElementById(id),
+            play = function(){
+                audio.play();
+                document.removeEventListener("touchstart",play, false);
+            };
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {//微信
+               play();
+            }, false);
+            document.addEventListener("touchstart",play, false);
+        }
+
+        var $mus = $('#mus');
+        $mus.click(function(){
+          if ($mus.hasClass('open')) {
+            $('#audio').get(0).pause();
+            $mus.removeClass('open').addClass('close');
+          }else{
+            $('#audio').get(0).play();
+            $mus.removeClass('close').addClass('open');
+          }
+        });
+    </script>
+    
 </html>

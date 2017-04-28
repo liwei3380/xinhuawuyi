@@ -1,8 +1,11 @@
 <template>
   <div class="page2 shuping">
-    <img src="../assets/2page.png" class="page2-img">
-    <img @click="showrules = !showrules" src="../assets/rollinstructions.png" class="rollinstructions">
-    <img @click="toPage3" src="../assets/click-roll.png" class="click-roll">
+    <img src="../assets/title-logo.png" class="title-logo">
+    <div class="img-box">
+      <img src="../assets/ball.png" class="page2-img">
+      <img @click="showrules = !showrules" src="../assets/rollinstructions.png" class="rollinstructions">
+      <img @click="toPage3" src="../assets/click-roll.png" class="click-roll">
+    </div>
     <rollrules v-show=showrules @click="showrules = !showrules"></rollrules>
   </div>
 </template>
@@ -34,22 +37,29 @@ export default {
 .page2{
   background: linear-gradient(#34AEFF, #69C3FF);
 }
+.title-logo{
+  width: 4.38rem;
+  margin-left: 0.25rem;
+}
 .page2-img{
-  width:85%;
+  width:6.75rem;
   display: block;
   margin: auto;
+}
+.img-box{
+  position: relative;
 }
 .rollinstructions{
   width: 1.76rem;
   position: absolute;
-  top: 8.97rem;
+  bottom: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .click-roll{
   width: 1.9rem;
   position: absolute;
-  top: 9.87rem;
+  bottom: 0.45rem;
   left: 50%;
   transform: translateX(-50%);
 }
