@@ -20,7 +20,7 @@ export default {
   },
   methods: {
   	toPage3 () {
-  		this.$router.push('/page3')
+  		this.$router.push('/worldmap')
   	}
   },
   components:{

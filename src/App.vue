@@ -15,14 +15,13 @@ body{
   padding: 0;
   margin: 0;
   font-size: 12px;
-  overflow: hidden;
+  
 }
 #app {
   font-family: Yuanti SC;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  overflow: hidden;
 }
 .shuping{
   box-sizing: border-box;

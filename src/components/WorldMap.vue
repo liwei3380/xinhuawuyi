@@ -44,11 +44,11 @@ export default {
     }
   },
   mounted () {
-    var deviceWidth = document.documentElement.clientWidth // rem 单位
+    /*var deviceWidth = document.documentElement.clientWidth // rem 单位
     if (deviceWidth > 1280) deviceWidth = 1280
     document.documentElement.style.fontSize = deviceWidth / 12.8 + 'px'
     var deviceHeight = document.documentElement.clientHeight
-    document.body.style.height = deviceHeight+'px'
+    document.body.style.height = deviceHeight+'px'*/
     var vm = this
     sessionStorage.setItem('isroll',1)// 可以roll
     G.setcb(function(data){
@@ -98,44 +98,43 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .worldmap{
-  width: 100%;
-  overflow: hidden;
+  height: 100%;
 }
 .wmbg{
-  width:13.6rem;
+  height: 12.2rem;
 }
 .eiffel, .greatewall, .jesus, .pyramid, .statue, .sydney{
   position: absolute;
 }
 .eiffel{
-  width: 0.79rem;
-  top: 1.7rem;
-  left:6.2rem;
+  width: 0.94rem;
+  top: 2.9rem;
+  left:10.5rem;
 }
 .greatewall{
-  width:.92rem;
-  top: 2.55rem;
-  left: 9.9rem;
+  width:1.1rem;
+  top: 4.25rem;
+  left: 16rem;
 }
 .jesus{
-  width: 1.04rem;
-  top: 4rem;
-  left: 4rem;
+  width: 1.24rem;
+  top: 6.9rem;
+  left: 6.4rem;
 }
 .pyramid{
-  width: 1.58rem;
-  top: 3.5rem;
-  left: 6.2rem;
+  width: 1.88rem;
+  top: 5.8rem;
+  left: 10.1rem;
 }
 .statue{
-  width: .8rem;
-  top: 1.9rem;
-  left: 2.9rem;
+  width: .96rem;
+  top: 3.4rem;
+  left: 4.5rem;
 }
 .sydney{
-  width: 1.57rem;
-  top: 5.1rem;
-  left: 10.3rem;
+  width: 1.87rem;
+  top: 8.2rem;
+  left: 17rem;
 }
 .dazhou{
   position: fixed;

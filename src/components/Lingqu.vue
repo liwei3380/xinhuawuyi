@@ -93,6 +93,7 @@ export default {
   padding: 0 0.25rem;
   border: 1px solid #F5B236;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .submit{
   width: 3.29rem;

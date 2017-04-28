@@ -77,8 +77,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .img-box{
-  width: 7.7rem;
-  height: 5.65rem;
+  width: 6.3rem;
+  height: 4.65rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -88,7 +88,7 @@ export default {
   margin-top:0.75rem;
 }
 .text-img{
-  width: 7.09rem;
+  width: 90%;
   position: fixed;
   top: 0.25rem;
   left: 50%;
@@ -96,7 +96,7 @@ export default {
   z-index: 1;
 }
 .box-img{
-  width: 7.7rem;
+  width: 100%;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -110,7 +110,7 @@ export default {
   background: rgba(0,0,0,0.5);
 }
 .shake{
-  width: 1.3rem;
+  width: 1rem;
   position: fixed;
   bottom: 0.25rem;
   right: 0.25rem;
