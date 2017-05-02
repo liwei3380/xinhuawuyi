@@ -19,7 +19,7 @@ export default {
     msg () {
       var type = sessionStorage.getItem('type')
       var types = ['200','100','50','20']
-      return '红利基金经理姚秋为您派发'+types[parseInt(type)-1]+'元旅行基金'
+      return '新华红利回报经理姚秋为您派发'+types[parseInt(type)-1]+'元旅行基金'
     }
   },
   mounted () {

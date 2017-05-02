@@ -1,12 +1,36 @@
 <template>
   <div class="worldmap">
     <img src="../assets/mapbg.png" class="wmbg">
-    <img src="../assets/eiffel.png" @click="showdazhou(0)" class="eiffel ani-tip">
-    <img src="../assets/greatwall.png" @click="showdazhou(1)" class="greatewall ani-tip">
-    <img src="../assets/jesus.png" @click="showdazhou(2)" class="jesus ani-tip">
-    <img src="../assets/pyramid.png" @click="showdazhou(3)" class="pyramid ani-tip">
-    <img src="../assets/statue.png" @click="showdazhou(4)" class="statue ani-tip">
-    <img src="../assets/sydney.png" @click="showdazhou(5)" class="sydney ani-tip">
+
+    <div class="eiffel ani-tip">
+      <div>点我</div>
+      <img src="../assets/eiffel.png" @click="showdazhou(0)">
+    </div>
+    <div class="greatewall ani-tip">
+      <div>点我</div>
+      <img src="../assets/greatwall.png" @click="showdazhou(1)">
+    </div>
+    <div class="jesus ani-tip">
+      <div>点我</div>
+      <img src="../assets/jesus.png" @click="showdazhou(2)">
+    </div>
+    <div class="pyramid ani-tip">
+      <div>点我</div>
+      <img src="../assets/pyramid.png" @click="showdazhou(3)">
+    </div>
+    <div class="statue ani-tip">
+      <div>点我</div>
+      <img src="../assets/statue.png" @click="showdazhou(4)">
+    </div>
+    <div class="sydney ani-tip">
+      <div>点我</div>
+      <img src="../assets/sydney.png" @click="showdazhou(5)">
+    </div>
+    
+    
+    
+    
+    
     <div class="prompt">左右滑动查看</div>
     <dazhou v-show="dazhoushow" @click="closedazhou" class="dazhou" :rollstat="rollstat" :msgg="msgg" :dazhouid="dazhouid"></dazhou>
   </div>
@@ -111,6 +135,13 @@ export default {
   width: 0.94rem;
   top: 2.9rem;
   left:10.5rem;
+}
+.ani-tip img{
+  width: 100%;
+}
+.ani-tip div{
+  text-align: right;
+  color: red;
 }
 .greatewall{
   width:1.1rem;

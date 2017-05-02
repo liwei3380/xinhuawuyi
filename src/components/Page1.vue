@@ -29,7 +29,7 @@ export default {
   background: #34AEFF;
 }
 .page1-img{
-  height: 100%;
+  width: 100%;
   display: block;
   margin: auto;
 }

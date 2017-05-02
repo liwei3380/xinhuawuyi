@@ -5,7 +5,7 @@
       <div :class=getrollstat>
         <img :src=imgsrc :class=textimg>
         <img :src=boximgsrc class="box-img">
-        <img src="../assets/shake.png" class="shake">
+        <img src="../assets/shake.png" class="shake ani-shake">
       </div>
     </div>
   </div>
@@ -137,5 +137,30 @@ export default {
     -webkit-transform:rotate(-15deg);}
   100% {transform: rotate(15deg);
     -webkit-transform:rotate(15deg);}
+}
+.ani-shake{
+  animation:shake 1s infinite;
+}
+@keyframes shake {
+  0% {
+    
+    transform: translateX(3%);
+  }
+  5% {
+    transform: translateX(-3%);
+  }
+  10% {
+    transform: translateX(3%);
+  }
+  15% {
+    transform: translateX(-3%);
+  }
+  20% {
+    transform: translateX(3%);
+  }
+  100% {
+    
+    transform: translateX(3%);
+  }
 }
 </style>
